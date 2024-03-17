@@ -8,7 +8,7 @@ from web_links.styles.color import ColorText as ct
 def navbar () -> rx.Component:
     return rx.hstack(
         rx.hstack(
-            rx.image(src="logo.png", 
+            rx.image(src="icons/logo.svg", 
                     height=Size.LARGE.value,
                     wight= Size.LARGE.value,
                     alt= "Logotipo de breativo. Texto formando el nombre de breativo."

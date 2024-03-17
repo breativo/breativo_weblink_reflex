@@ -6,7 +6,7 @@ from web_links.styles.color import ColorText as ct
 def footer() -> rx.Component:
     return rx.box(
         rx.vstack(
-            rx.image(src="favicon.png", 
+            rx.image(src="icons/favicon.svg", 
                     height=Size.BIG.value,
                     wight= Size.BIG.value,
                     alt= "Logotipo de breativo. Texto formando el nombre de breativo."),

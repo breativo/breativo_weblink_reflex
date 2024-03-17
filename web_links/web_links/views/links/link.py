@@ -2,6 +2,7 @@ import reflex as rx
 from web_links.components.link_button import link_button
 from web_links.components.title import title
 from web_links.styles.styles import Size as Size
+from web_links.styles.color import Color as cl
 import web_links.constants as cont
 
 
@@ -49,11 +50,12 @@ def links () ->  rx.Component:
                         
         title("Cursos"),
 
-            link_button(
-                        "Python by breativo", 
-                        "Domina Python con breativo",
-                        "icons/python.svg",
-                        cont.PYTHON),
+                link_button(
+                            "Python by breativo", 
+                            "Domina Python con breativo",
+                            "icons/python.svg",
+                            cont.PYTHON,
+                            ),
 
         title("Contacto"),
 

@@ -7,22 +7,11 @@ from web_links.styles.color import Color as cl
 
 def header()-> rx.Component:
     return rx.vstack(
-        rx.hstack(
-            rx.avatar(name="breativo",
-                    src="avatar_negro.png",
-                    padding="2px",
-                    size="8" ),
-                rx.vstack(
-                    rx.heading(
-                    "breativo"
-                    ),
-
-                    rx.text(
-                    "@breativo",
-                    font_size=Size.DEFAULT.value,
-                    margin="0",
-                    color=cl.PRIMARY.value
-                    ),
+        
+            rx.image(
+                    src="icons/logo.svg",
+                    margin_top= Size.BIG.value,
+                    alt= "Logotipo de breativo. Texto formando el nombre de breativo."),
 
                     rx.hstack(
                         link_icon(
@@ -40,12 +29,6 @@ def header()-> rx.Component:
                             "https://www.tiktok.com/@breativo"
                             ),
                     ),
-                    margin_left=Size.LARGE.value
-                ),            
-            
-        aling_item="start",
-        margin=Size.LARGE.value
-        ),
 
         rx.flex(
                 info_text("+2", "Años de experiencia"),
@@ -57,15 +40,21 @@ def header()-> rx.Component:
         ),
 
         rx.text("""
-                Breativo surge de una profunda pasión y un sueño persistente: avanzar y evolucionar constantemente como profesional en el vibrante mundo del desarrollo de software. A lo largo de los últimos años, he dedicado mi carrera a dominar una diversidad de lenguajes de programación y tecnologías, incluyendo Java, JavaScript, Python, Kotlin y Swift, cada uno aportando su propia esencia y conjunto de desafíos al arte del desarrollo de software. 
-                """,
+                Breativo surge de una profunda pasión y un sueño persistente: avanzar y evolucionar constantemente como profesional en el vibrante mundo del desarrollo de software. A lo largo de los últimos años, he dedicado mi carrera a dominar una diversidad de lenguajes de programación y tecnologías, incluyendo Java, JavaScript, Python, Kotlin y Swift, cada uno aportando su propia esencia y conjunto de desafíos al arte del desarrollo de software.                """,
                 color=ct.BODY.value,
                 margin_top=Size.BIG.value,
-                margin_bottom=Size.BIG.value,
-                font_size=Size.MEDIUM.value
+                font_size=Size.DEFAULT.value
                 ),
-    width="90%",
-    margin="auto",
-    aling_item="start",
-    spacing= "4"
+        
+        rx.text("""
+                La misión de Breativo es sencilla pero poderosa: compartir y devolver a la comunidad el caudal de conocimientos y experiencias acumuladas durante estos años de aprendizaje y práctica. Creo firmemente en el crecimiento colectivo y en el impacto positivo que podemos generar al compartir nuestras habilidades y descubrimientos con otros. 
+                """,
+                color=ct.BODY.value,
+                margin_bottom=Size.BIG.value,
+                font_size=Size.DEFAULT.value
+                ),   
+                width="90%",
+                margin="auto",
+                aling_item="start",
+                spacing= "8"
     )
